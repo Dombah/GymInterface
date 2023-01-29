@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400">
+        Title="Login" Height="450" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="40"/>
@@ -22,18 +22,23 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Login Page" Grid.Column="2" Grid.Row="1" FontSize="30" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
         <TextBlock Text="" Grid.Column="2" Grid.Row="2" FontSize="30"/>
         <TextBlock Text="Username: " Grid.Column="2" Grid.Row="3" FontSize="30"/>
-        <TextBox x:Name="UserInput" Grid.Column="3" Grid.Row="3" FontSize="30" Background="#FFF9F0F0"/>
+        <TextBox x:Name="UserInput" Grid.Column="3" Grid.Row="3" FontSize="30" Background="#FFF9F0F0" Opacity="0.5"/>
         <TextBlock Text="" Grid.Column="2" Grid.Row="4" FontSize="30"/>
         <TextBlock Text="Password: " Grid.Column="2" Grid.Row="4" FontSize="30"/>
-        <TextBox x:Name="PasswordInput" Grid.Column="3" Grid.Row="4" FontSize="30" Background="#FFF9F0F0"/>
+        <TextBox x:Name="PasswordInput" Grid.Column="3" Grid.Row="4" FontSize="30" Background="#FFF9F0F0" Opacity="0.5"/>
         <TextBlock Text="" Grid.Column="2" Grid.Row="5" FontSize="30"/>
-        <Button x:Name="LoginButton" Content="Login" Grid.Column="2" Grid.Row="6" Margin="25 25 25 25" HorizontalAlignment="Center"
-                Grid.ColumnSpan="2" FontSize="30" MinWidth="100" MaxWidth="200"/>
+        <TextBlock Text="" Grid.Column="2" Grid.Row="6" FontSize="30"/>
+        <Button x:Name="LoginButton" Content="Login" Grid.Column="2" Grid.Row="7" Margin="25 50 25 25" HorizontalAlignment="Center"
+                Grid.ColumnSpan="2" FontSize="30" MinWidth="150" MaxWidth="200" Background="#FFF7EDED" Click="LoginButton_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/NoBackground.png"/>
+        </Grid.Background>
     </Grid>
 </Window>

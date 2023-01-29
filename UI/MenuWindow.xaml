@@ -1,0 +1,53 @@
+﻿<Window x:Class="UI.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="600" Width="800" Background="Black" Foreground="Black" Opacity="0.75">
+    <Grid Opacity="0.75">
+        <Grid.Background>
+            <ImageBrush ImageSource="/CentralMain.jpg" AlignmentY="Top" AlignmentX="Center" Stretch="Fill" Opacity="1"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Image Source="/NoBackground.png" >
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <TextBlock Text="Menu" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" FontSize="45" HorizontalAlignment="Center" Margin="10 10 10 10" FontWeight="Bold"/>
+        <Button x:Name="IDButton" Content="Search by ID" Grid.Column="1" Grid.Row="1" FontSize="45" FontWeight="Bold" Background="#FFA04242" BorderBrush="Black" Foreground="White"
+                Margin="10 10 10 10" Click="IDButton_Click"/>
+        <Button x:Name="NameButton" Content="Search by name" Grid.Column="2" Grid.Row="1" FontSize="45" FontWeight="Bold" Background="#FFA04242" BorderBrush="Black" Foreground="White"
+                Margin="10 10 10 10" Click="NameButton_Click"/>
+        <Button x:Name="LogutButton" Content="Logout" Grid.Column="2" Grid.Row="3" FontSize="45" FontWeight="Bold" Background="#FFA04242" BorderBrush="Black" Foreground="White"
+                Margin="10 10 10 10" Click="LogutButton_Click"/>
+        <Button x:Name="BuyButton" Content="Make receipt" Grid.Column="1" Grid.Row="3" FontSize="45" FontWeight="Bold" Background="#FFA04242" BorderBrush="Black" Foreground="White"
+                Margin="10 10 10 10" Click="BuyButton_Click"/>
+    </Grid>
+</Window>

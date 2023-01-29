@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary
+﻿namespace GymInterface.ClassLibrary
 {
     public class Class1
     {

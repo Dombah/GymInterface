@@ -7,4 +7,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="CentralMain.jpg" />
+    <None Remove="NoBackground.png" />
+    <None Remove="WithBackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="CentralMain.jpg" />
+    <Resource Include="NoBackground.png" />
+    <Resource Include="WithBackground.jpg" />
+  </ItemGroup>
+
 </Project>

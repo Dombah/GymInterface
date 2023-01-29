@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{B24C8024-5E6B-4BD0-937B-23BC2C029617}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "UI\UI.csproj", "{B24C8024-5E6B-4BD0-937B-23BC2C029617}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A293CE5B-75E6-401C-8469-934CD8618F4A} = {A293CE5B-75E6-401C-8469-934CD8618F4A}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{A293CE5B-75E6-401C-8469-934CD8618F4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{A293CE5B-75E6-401C-8469-934CD8618F4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{DEF4E4E5-B7AA-4214-9590-6A018C8397C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{DEF4E4E5-B7AA-4214-9590-6A018C8397C7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A293CE5B-75E6-401C-8469-934CD8618F4A} = {A293CE5B-75E6-401C-8469-934CD8618F4A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
